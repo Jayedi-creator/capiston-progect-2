@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/30101091/pexels-photo-30101091/free-photo-of-scenic-view-of-lighthouse-on-mediterranean-coastline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 1">
+        <img src="https://images.pexels.com/photos/31061230/pexels-photo-31061230/free-photo-of-fresh-lemons-on-tree-with-rain-drops.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 2">
+        <img src="https://images.pexels.com/photos/31071006/pexels-photo-31071006/free-photo-of-cat-at-fushimi-inari-shrine-with-colorful-banners.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 3">
+        <img src="https://images.pexels.com/photos/12409206/pexels-photo-12409206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 4">
+        <img src="https://images.pexels.com/photos/20765385/pexels-photo-20765385/free-photo-of-beautiful-jungle-waterfall-in-a-tropical-forest-with-rock-and-blue-freshwater-small-river-summer-season-new-leaves-natural-landscape-background-unique-photos-its-name-is-nishizawa-japan.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 5">
+        <img src="https://images.pexels.com/photos/31075100/pexels-photo-31075100/free-photo-of-charming-venetian-canal-with-historic-bridge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 6">
+    </div>
+
+</body>
+
+</html>
